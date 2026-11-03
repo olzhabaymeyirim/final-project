@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moon & Movies | Schedule</title>
+
+    <link rel="icon" type="image/jpg" href="images/favicon_movie.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!--header -->
+<header class="header">
+
+    <a href="index.html" class="logo">
+        Moon & Movies
+    </a>
+
+    <nav class="menu">
+
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="schedule.html" class="active">Schedule</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html">Register</a>
+
+        <select name="language" aria-label="Select language">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="kz">KZ</option>
+        </select>
+        <button
+    type="button"
+    id="themeButton"
+    class="theme-switch"
+    aria-label="Switch to light theme"
+    title="Switch to light theme">
+    
+</button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!--intro -->
+    <section class="schedule-intro">
+
+        <h1>Movie Schedule</h1>
+
+        <p>
+            Choose a movie, park and time to enjoy cinema under the open sky.
+        </p>
+
+    </section>
+
+
+    <!-- date selection -->
+    <section class="date-selection">
+
+        <h2>Choose a Date</h2>
+
+        <div class="date-buttons">
+
+            <button>24 Sep</button>
+            <button>25 Sep</button>
+            <button>26 Sep</button>
+            <button>27 Sep</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- filters -->
+    <section class="schedule-filters">
+
+        <div class="filter-box">
+
+            <label for="location">Location</label>
+
+            <select id="location">
+                <option>All Parks</option>
+                <option>Botanical Garden</option>
+                <option>Presidential Park</option>
+                <option>Zhetisu Park</option>
+            </select>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <label for="age">Age</label>
+
+            <select id="age">
+                <option>All Ages</option>
+                <option>5+</option>
+                <option>6+</option>
+                <option>12+</option>
+                <option>18+</option>
+            </select>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <label for="movie">Movie</label>
+
+            <select id="movie">
+                <option>All Movies</option>
+                <option>La La Land</option>
+                <option>About Time</option>
+                <option>Michael</option>
+                <option>Formula 1</option>
+                <option>Frozen</option>
+                <option>Hotel Transylvania</option>
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- schedule -->
+    <section class="movie-schedule">
+
+        <h2>Today's Movies</h2>
+
+
+        <!--lalaLand -->
+        <div class="movie-card">
+
+            <img src="images/lalaland.jpg" alt="La La Land poster">
+
+            <div class="movie-info">
+
+                <h3>
+                    La La Land
+                    <span>12+</span>
+                </h3>
+
+                <p>Location: Botanical Garden</p>
+                <p>Time: 19:30</p>
+                <p>Duration: 2h 08min</p>
+
+            </div>
+
+
+            <div class="ticket-prices">
+
+                <h4>Ticket Prices</h4>
+
+                <p>
+                    Adult:
+                    <strong>2,500 ₸</strong>
+                </p>
+
+                <p>
+                    Student:
+                    <strong>2,000 ₸</strong>
+                </p>
+
+                <p>
+                    Child:
+                    <strong>1,500 ₸</strong>
+                </p>
+
+                <a href="contact.html" class="book-button">
+                    Book Ticket
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- about time -->
+        <div class="movie-card">
+
+            <img src="images/about-time.jpg" alt="About Time poster">
+
+            <div class="movie-info">
+
+                <h3>
+                    About Time
+                    <span>12+</span>
+                </h3>
+
+                <p>Location: Presidential Park</p>
+                <p>Time: 20:00</p>
+                <p>Duration: 1h 45min</p>
+
+            </div>
+
+
+            <div class="ticket-prices">
+
+                <h4>Ticket Prices</h4>
+
+                <p>
+                    Adult:
+                    <strong>2,500 ₸</strong>
+                </p>
+
+                <p>
+                    Student:
+                    <strong>2,000 ₸</strong>
+                </p>
+
+                <p>
+                    Child:
+                    <strong>1,500 ₸</strong>
+                </p>
+
+                <a href="contact.html" class="book-button">
+                    Book Ticket
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- michael -->
+        <div class="movie-card">
+
+            <img src="images/michael.jpg" alt="Michael poster">
+
+            <div class="movie-info">
+
+                <h3>
+                    Michael
+                    <span>18+</span>
+                </h3>
+
+                <p>Location: Zhetisu Park</p>
+                <p>Time: 21:00</p>
+                <p>Duration: 2h 10min</p>
+
+            </div>
+
+
+            <div class="ticket-prices">
+
+                <h4>Ticket Prices</h4>
+
+                <p>
+                    Adult:
+                    <strong>3,000 ₸</strong>
+                </p>
+
+                <p>
+                    Student:
+                    <strong>2,500 ₸</strong>
+                </p>
+
+                <a href="contact.html" class="book-button">
+                    Book Ticket
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- F1 -->
+        <div class="movie-card">
+
+            <img src="images/f1.jpg" alt="Formula 1 poster">
+
+            <div class="movie-info">
+
+                <h3>
+                    Formula 1
+                    <span>12+</span>
+                </h3>
+
+                <p>Location: Botanical Garden</p>
+                <p>Time: 21:30</p>
+                <p>Duration: 2h 35min</p>
+
+            </div>
+
+
+            <div class="ticket-prices">
+
+                <h4>Ticket Prices</h4>
+
+                <p>
+                    Adult:
+                    <strong>3,000 ₸</strong>
+                </p>
+
+                <p>
+                    Student:
+                    <strong>2,500 ₸</strong>
+                </p>
+
+                <p>
+                    Child:
+                    <strong>2,000 ₸</strong>
+                </p>
+
+                <a href="contact.html" class="book-button">
+                    Book Ticket
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- frozen -->
+        <div class="movie-card">
+
+            <img src="images/frozen.jpg" alt="Frozen poster">
+
+            <div class="movie-info">
+
+                <h3>
+                    Frozen
+                    <span>5+</span>
+                </h3>
+
+                <p>Location: Presidential Park</p>
+                <p>Time: 18:00</p>
+                <p>Duration: 1h 42min</p>
+
+            </div>
+
+
+            <div class="ticket-prices">
+
+                <h4>Ticket Prices</h4>
+
+                <p>
+                    Adult:
+                    <strong>2,500 ₸</strong>
+                </p>
+
+                <p>
+                    Student:
+                    <strong>2,000 ₸</strong>
+                </p>
+
+                <p>
+                    Child:
+                    <strong>1,500 ₸</strong>
+                </p>
+
+                <a href="contact.html" class="book-button">
+                    Book Ticket
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- hotel transylvania -->
+        <div class="movie-card">
+
+            <img src="images/hotel-transylvania.jpg" alt="Hotel Transylvania poster">
+
+            <div class="movie-info">
+
+                <h3>
+                    Hotel Transylvania
+                    <span>6+</span>
+                </h3>
+
+                <p>Location: Zhetisu Park</p>
+                <p>Time: 22:30</p>
+                <p>Duration: 1h 31min</p>
+
+            </div>
+
+
+            <div class="ticket-prices">
+
+                <h4>Ticket Prices</h4>
+
+                <p>
+                    Adult:
+                    <strong>2,500 ₸</strong>
+                </p>
+
+                <p>
+                    Student:
+                    <strong>2,000 ₸</strong>
+                </p>
+
+                <p>
+                    Child:
+                    <strong>1,500 ₸</strong>
+                </p>
+
+                <a href="contact.html" class="book-button">
+                    Book Ticket
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- outdoor cinema info-->
+    <section class="outdoor-info">
+
+        <h2>Outdoor Cinema Information</h2>
+
+        <div class="info-container">
+
+            <div class="info-card">
+
+                <h3> &#127769 Under the Stars</h3>
+
+                <p>
+                    Enjoy your favorite movies in a relaxing outdoor atmosphere.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3> &#x1fa91 Comfortable Seating</h3>
+
+                <p>
+                    Bring a blanket or choose a comfortable seat in our outdoor area.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3> &#127871 Food & Drinks</h3>
+
+                <p>
+                    Snacks and drinks are available during the movie night.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- important info-->
+    <section class="important-info">
+
+        <h2>Important Information</h2>
+
+        <p>
+            Please arrive 15–20 minutes before the movie starts.
+            Outdoor screenings may be postponed in case of bad weather.
+        </p>
+
+    </section>
+
+</main>
+
+
+<!--footer-->
+<footer class="movies-footer">
+
+    <p>
+        &#169; 2026 Moon & movies. All rights reserved.
+    </p>
+
+    <p>
+        Cinema under the moon &#9829;
+    </p>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="js/assignment6.js"></script>
+<script src="js/assignment5.js"></script>
+
+</body>
+</html>

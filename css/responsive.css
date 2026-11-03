@@ -1,0 +1,1213 @@
+
+
+
+/* =========================================================
+   TABLET — MAX WIDTH 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* SHARED HEADER */
+
+    .header {
+        padding: 18px 4%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+        gap: 8px;
+    }
+
+    .menu a,
+    .menu select {
+        height: 36px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+
+    /* HOME PAGE */
+
+    .main-part {
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .main-text {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 60px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 75px 6%;
+    }
+
+    .about h2 {
+        font-size: 46px;
+    }
+
+    .about-visual img {
+        height: 420px;
+    }
+
+    .otzyv {
+        padding: 75px 5%;
+    }
+
+    .otzyv-title h2 {
+        font-size: 45px;
+    }
+
+    .otzyv-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .otzyv-card img {
+        height: 230px;
+    }
+
+    .write-otzyv {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px;
+    }
+
+    .student-offer {
+        padding: 70px 6%;
+    }
+
+    .student-offer h2 {
+        font-size: 45px;
+    }
+
+    .final-cta {
+        padding: 85px 20px;
+    }
+
+    .final-cta h2 {
+        font-size: 48px;
+    }
+
+
+    /* MOVIES PAGE */
+
+    .intro {
+        min-height: 520px;
+        padding: 50px 20px;
+        background-position: center;
+    }
+
+    .intro h1 {
+        font-size: 48px;
+    }
+
+    .movies-list {
+        padding: 65px 25px;
+    }
+
+    .griid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .movie-image-box {
+        height: 340px;
+    }
+
+    .movie-details {
+        padding: 20px;
+    }
+
+    .movie-details h3 {
+        font-size: 21px;
+    }
+
+    .movie-banner {
+        width: 90%;
+        margin: 10px auto 60px;
+    }
+
+    .movie-search {
+        padding: 15px 20px;
+    }
+
+
+    /* SCHEDULE PAGE */
+
+    body:has(.schedule-intro) main {
+        width: 92%;
+    }
+
+    .schedule-intro {
+        min-height: 350px;
+        margin: 30px 0;
+        padding: 55px 20px;
+    }
+
+    .schedule-intro h1 {
+        font-size: 43px;
+    }
+
+    .schedule-intro p {
+        font-size: 17px;
+    }
+
+    .schedule-filters {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .movie-card {
+        gap: 22px;
+        padding: 22px;
+    }
+
+    .movie-card img {
+        width: 130px;
+        height: 190px;
+    }
+
+    .ticket-prices {
+        min-width: 200px;
+        padding-left: 20px;
+    }
+
+    .info-container {
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        flex: 1 1 45%;
+    }
+
+
+    /* CONTACT PAGE */
+
+    .hero {
+        padding: 75px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .booking {
+        width: 90%;
+        margin: 50px auto;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .booking-info {
+        padding: 10px;
+    }
+
+    .booking-info h1 {
+        font-size: 42px;
+    }
+
+    .booking-form {
+        padding: 22px;
+    }
+
+    .contact-us {
+        width: 90%;
+        margin: 60px auto;
+        padding: 35px;
+        gap: 30px;
+    }
+
+    .contact-card {
+        width: 320px;
+        flex-shrink: 0;
+    }
+
+    .faq-section {
+        width: 95%;
+        margin: 50px auto;
+    }
+
+
+    /* REGISTRATION PAGE */
+
+    .registration-card {
+        padding: 25px;
+    }
+
+
+    /* JQUERY FEATURES */
+
+    .welcome-section {
+        width: 90%;
+    }
+
+    .wishlist-section {
+        padding: 40px 20px;
+    }
+
+    #wishlistItems {
+        max-width: 90%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE — MAX WIDTH 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* SHARED */
+
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 16px 15px;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .menu {
+        gap: 7px;
+        justify-content: center;
+    }
+
+    .menu a,
+    .menu select {
+        height: 34px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .menu .theme-switch {
+        width: 35px;
+        min-width: 35px;
+        height: 35px;
+        font-size: 19px;
+    }
+
+
+    /* HOME PAGE */
+
+    .main-part {
+        height: 500px;
+        min-height: 500px;
+    }
+
+    .main-text {
+        width: 95%;
+        gap: 15px;
+    }
+
+    .main-text h1 {
+        font-size: 42px;
+    }
+
+    .main-text p {
+        font-size: 13px;
+    }
+
+    .about {
+        padding: 55px 20px;
+        gap: 25px;
+    }
+
+    .about h2 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-visual img {
+        height: 300px;
+    }
+
+    .otzyv {
+        padding: 55px 20px;
+    }
+
+    .otzyv-title {
+        margin-bottom: 30px;
+    }
+
+    .otzyv-title h2 {
+        font-size: 35px;
+    }
+
+    .otzyv-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .otzyv-card img {
+        height: 230px;
+    }
+
+    .otzyv-content {
+        padding: 18px;
+    }
+
+    .otzyv-names {
+        flex-wrap: wrap;
+    }
+
+    .write-otzyv {
+        margin-top: 40px;
+        padding: 23px 18px;
+        gap: 20px;
+    }
+
+    .write-otzyv h3 {
+        font-size: 28px;
+    }
+
+    .write-otzyv form {
+        width: 100%;
+    }
+
+    .write-otzyv button {
+        width: 100%;
+    }
+
+    .student-offer {
+        padding: 55px 20px;
+    }
+
+    .student-offer h2 {
+        font-size: 35px;
+    }
+
+    .offer-content {
+        padding: 25px 18px;
+    }
+
+    .offer-content strong {
+        font-size: 40px;
+    }
+
+    .final-cta {
+        padding: 65px 20px;
+    }
+
+    .final-cta h2 {
+        font-size: 36px;
+    }
+
+
+    /* MOVIES PAGE */
+
+    .intro {
+        min-height: 430px;
+        padding: 35px 15px;
+    }
+
+    .intro-content {
+        padding: 15px;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro p:last-child {
+        font-size: 15px;
+    }
+
+    .movies-list {
+        padding: 45px 18px;
+    }
+
+    .movies-title {
+        margin-bottom: 30px;
+    }
+
+    .movies-title h2 {
+        font-size: 30px;
+    }
+
+    .griid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .movie-image-box {
+        height: 360px;
+    }
+
+    .movie-details {
+        padding: 20px;
+    }
+
+    .movie-details h3 {
+        font-size: 22px;
+    }
+
+    .trailer-button,
+    body:has(.intro) .book-button,
+    body:has(.intro) .schedule-button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .movie-banner {
+        width: 90%;
+        min-height: 220px;
+        margin: 10px auto 45px;
+        padding: 30px 18px;
+    }
+
+    .movie-banner h2 {
+        font-size: 27px;
+    }
+
+    .movie-search {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .movie-search input {
+        width: 100%;
+    }
+
+    .category-controls {
+        gap: 8px;
+    }
+
+    .category-btn {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+
+    .wishlist-section {
+        padding: 35px 18px;
+    }
+
+    #wishlistForm {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #wishlistInput {
+        width: 100%;
+    }
+
+    #wishlistForm button {
+        width: 100%;
+    }
+
+    #wishlistItems {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    #wishlistItems li {
+        overflow-wrap: anywhere;
+    }
+
+
+    /* SCHEDULE PAGE */
+
+    body:has(.schedule-intro) main {
+        width: 92%;
+    }
+
+    .schedule-intro {
+        min-height: 290px;
+        margin: 20px 0;
+        padding: 40px 15px;
+        border-radius: 12px;
+    }
+
+    .schedule-intro h1 {
+        font-size: 32px;
+    }
+
+    .schedule-intro p {
+        font-size: 14px;
+    }
+
+    .date-selection {
+        padding: 10px 0 25px;
+    }
+
+    .date-selection h2 {
+        font-size: 21px;
+    }
+
+    .date-buttons {
+        gap: 8px;
+    }
+
+    .date-buttons button {
+        padding: 9px 13px;
+        font-size: 13px;
+    }
+
+    .schedule-filters {
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px 0 25px;
+        padding: 18px;
+    }
+
+    .filter-box select {
+        width: 100%;
+    }
+
+    .movie-schedule {
+        padding: 20px 0 40px;
+    }
+
+    .movie-schedule > h2 {
+        font-size: 24px;
+    }
+
+    .movie-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .movie-card img {
+        width: 100%;
+        height: 270px;
+    }
+
+    .movie-info h3 {
+        font-size: 20px;
+    }
+
+    .movie-info h3 span {
+        margin: 8px 0 0;
+    }
+
+    .ticket-prices {
+        width: 100%;
+        min-width: 0;
+        padding: 18px 0 0;
+        border-left: none;
+        border-top: 1px solid #66606f;
+    }
+
+    .movie-schedule .book-button {
+        width: 100%;
+    }
+
+    .outdoor-info {
+        padding: 25px 0 35px;
+    }
+
+    .outdoor-info h2 {
+        font-size: 24px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-card {
+        width: 100%;
+        flex: auto;
+    }
+
+    .important-info {
+        padding: 22px 17px;
+        margin-bottom: 40px;
+    }
+
+    .important-info h2 {
+        font-size: 21px;
+    }
+
+
+    /* CONTACT PAGE */
+
+    .hero {
+        padding: 60px 18px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .booking {
+        width: 92%;
+        margin: 30px auto;
+        padding: 22px 17px;
+        flex-direction: column;
+        gap: 22px;
+        border-radius: 15px;
+    }
+
+    .booking-info {
+        padding: 0;
+    }
+
+    .booking-info h1 {
+        font-size: 34px;
+    }
+
+    .booking-info p {
+        font-size: 15px;
+    }
+
+    .booking-form {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .booking-form h2 {
+        font-size: 23px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row div {
+        width: 100%;
+    }
+
+    .booking-form input,
+    .booking-form select {
+        width: 100%;
+    }
+
+    .booking-form button {
+        width: 100%;
+    }
+
+    .faq-section {
+        width: 94%;
+        margin: 35px auto;
+        padding: 20px 5px;
+    }
+
+    .faq-section h2 {
+        font-size: 26px;
+        margin-bottom: 22px;
+    }
+
+    .faq-item {
+        margin: 12px auto;
+    }
+
+    .faq-question {
+        padding: 15px 12px;
+        font-size: 14px;
+    }
+
+    .faq-answer {
+        padding: 13px;
+        font-size: 13px;
+    }
+
+    #faqInfoButton {
+        max-width: 100%;
+        padding: 11px 16px;
+    }
+
+    .contact-us {
+        width: 92%;
+        margin: 35px auto;
+        padding: 23px 17px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+        border-radius: 15px;
+    }
+
+    .contact-text h2 {
+        font-size: 30px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+    }
+
+    .contact-card {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .contact-item {
+        gap: 12px;
+        padding: 14px 0;
+    }
+
+    .contact-item span {
+        font-size: 21px;
+    }
+
+    .contact-item p {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-options {
+        width: 100%;
+    }
+
+    .contact-options a {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* REGISTRATION PAGE */
+
+    .registration-card {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    .registration-card h1 {
+        font-size: 27px;
+    }
+
+    .registration-card .form-control,
+    .registration-card .form-select {
+        font-size: 14px;
+    }
+
+
+    /* WELCOME SECTION */
+
+    .welcome-section {
+        width: 92%;
+        margin: 25px auto;
+        padding: 22px 15px;
+    }
+
+    .welcome-section label {
+        font-size: 16px;
+    }
+
+    .welcome-section input {
+        width: 100%;
+    }
+
+    .welcome-section #welcomeButton {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+
+    /* FOOTER */
+
+    .movies-footer {
+        padding: 23px 15px;
+    }
+
+    .movies-footer p {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE — MAX WIDTH 375px
+========================================================= */
+
+@media (max-width: 375px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .menu {
+        gap: 6px;
+    }
+
+    .menu a,
+    .menu select {
+        padding: 0 8px;
+        font-size: 11px;
+    }
+
+    .main-text h1 {
+        font-size: 36px;
+    }
+
+    .about h2,
+    .otzyv-title h2,
+    .student-offer h2 {
+        font-size: 31px;
+    }
+
+    .intro h1 {
+        font-size: 31px;
+    }
+
+    .movie-image-box {
+        height: 310px;
+    }
+
+    .schedule-intro h1 {
+        font-size: 28px;
+    }
+
+    .booking-info h1 {
+        font-size: 30px;
+    }
+
+    .contact-text h2 {
+        font-size: 27px;
+    }
+
+    .faq-question {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   GLOBAL OVERFLOW PROTECTION
+========================================================= */
+
+@media (max-width: 900px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .booking,
+    .contact-us,
+    .movie-card,
+    .registration-card,
+    .write-otzyv {
+        min-width: 0;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        max-width: 100%;
+    }
+}
+
+/* =========================================================
+   LARGE DESKTOP — 1200px AND ABOVE
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 22px 5%;
+        gap: 35px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a,
+    .menu select {
+        padding-left: 17px;
+        padding-right: 17px;
+        font-size: 15px;
+    }
+
+
+    /* HOME PAGE */
+
+    .main-text {
+        width: min(90%, 1100px);
+    }
+
+    .main-text h1 {
+        font-size: clamp(80px, 6vw, 105px);
+    }
+
+    .about {
+        padding: clamp(100px, 8vw, 140px) 8%;
+        gap: clamp(60px, 6vw, 100px);
+    }
+
+    .about h2 {
+        font-size: clamp(55px, 4vw, 68px);
+    }
+
+    .about-visual img {
+        height: clamp(500px, 38vw, 620px);
+    }
+
+    .otzyv {
+        padding: 110px 7%;
+    }
+
+    .otzyv-list {
+        max-width: 1500px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .otzyv-card img {
+        height: clamp(250px, 20vw, 330px);
+    }
+
+    .write-otzyv {
+        max-width: 1450px;
+        margin: 75px auto 0;
+        padding: 50px;
+        gap: 70px;
+    }
+
+    .student-offer {
+        padding: 110px 8%;
+    }
+
+    .final-cta {
+        padding: 130px 30px;
+    }
+
+
+    /* MOVIES PAGE */
+
+    .intro {
+        min-height: 750px;
+    }
+
+    .intro-content {
+        max-width: 900px;
+    }
+
+    .intro h1 {
+        font-size: clamp(60px, 5vw, 78px);
+    }
+
+    .movies-list {
+        width: 94%;
+        max-width: 1500px;
+        padding: 100px 35px;
+    }
+
+    .movies-title {
+        max-width: 850px;
+        margin-bottom: 65px;
+    }
+
+    .movies-title h2 {
+        font-size: 46px;
+    }
+
+    .griid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: clamp(25px, 2.5vw, 40px);
+    }
+
+    .movie-image-box {
+        height: clamp(420px, 34vw, 540px);
+    }
+
+    .movie-details {
+        padding: clamp(25px, 2vw, 35px);
+    }
+
+    .movie-banner {
+        width: 92%;
+        max-width: 1400px;
+        min-height: 320px;
+        padding: 60px 40px;
+    }
+
+
+    /* SCHEDULE PAGE */
+
+    body:has(.schedule-intro) main {
+        width: 90%;
+        max-width: 1450px;
+    }
+
+    .schedule-intro {
+        min-height: 450px;
+        padding: 100px 40px;
+    }
+
+    .schedule-intro h1 {
+        font-size: 58px;
+    }
+
+    .movie-card {
+        padding: 35px 40px;
+        gap: 50px;
+    }
+
+    .movie-card img {
+        width: 185px;
+        height: 265px;
+    }
+
+    .movie-info h3 {
+        font-size: 27px;
+    }
+
+    .ticket-prices {
+        min-width: 290px;
+        padding-left: 40px;
+    }
+
+    .info-container {
+        gap: 30px;
+    }
+
+    .info-card {
+        padding: 32px;
+    }
+
+
+    /* CONTACT PAGE */
+
+    .booking,
+    .contact-us {
+        width: 90%;
+        max-width: 1300px;
+    }
+
+    .booking {
+        padding: 60px;
+        gap: 75px;
+    }
+
+    .booking-info h1 {
+        font-size: 58px;
+    }
+
+    .booking-form {
+        padding: 40px;
+    }
+
+    .contact-us {
+        padding: 70px;
+        gap: 80px;
+    }
+
+    .contact-text {
+        max-width: 650px;
+    }
+
+    .contact-card {
+        width: 390px;
+        padding: 32px;
+    }
+
+    .faq-section {
+        max-width: 1000px;
+        padding: 40px 25px;
+    }
+
+    .faq-item {
+        max-width: 950px;
+    }
+
+
+    /* REGISTRATION */
+
+    .registration-card {
+        padding: 40px;
+    }
+
+
+    /* SHARED JQUERY SECTIONS */
+
+    .welcome-section {
+        max-width: 850px;
+        padding: 40px;
+    }
+
+    .wishlist-section {
+        padding: 60px 35px;
+    }
+
+    #wishlistItems {
+        max-width: 650px;
+    }
+}
+
+
+/* =========================================================
+   MEDIUM DESKTOP — 901px TO 1199px
+========================================================= */
+
+@media (min-width: 901px) and (max-width: 1199px) {
+
+    .movies-list {
+        width: 96%;
+        padding: 70px 25px;
+    }
+
+    .griid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .movie-image-box {
+        height: 400px;
+    }
+
+    body:has(.schedule-intro) main {
+        width: 92%;
+    }
+
+    .booking,
+    .contact-us {
+        width: 92%;
+        padding: 35px;
+        gap: 30px;
+    }
+
+    .contact-card {
+        width: 300px;
+    }
+
+    .about {
+        gap: 35px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moon & Movies | Home</title>
+
+    <link rel="icon" type="image/jpg" href="images/favicon_movie.jpg">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!--макушка-->
+<header class="header">
+
+    <a href="index.html" class="logo">Moon & Movies</a>
+
+    <nav class="menu">
+
+        <a href="index.html" class="active">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html">Register</a>
+
+        <select name="language" aria-label="Select language">
+            <option value="en">EN</option>
+            <option value="kz">KZ</option>
+            <option value="ru">RU</option>
+        </select>
+        <button
+    type="button"
+    id="themeButton"
+    class="theme-switch"
+    aria-label="Switch to light theme"
+    title="Switch to light theme">
+    
+</button>
+
+    </nav>
+
+</header>
+
+<section class="welcome-section">
+    <h2>Welcome to Moon & Movies</h2>
+
+<label for="welcomeName">Enter your name:</label>
+<input
+    type="text"
+    id="welcomeName"
+    placeholder="Your name"
+>
+
+<button type="button" id="welcomeButton">Say Hello</button>
+
+<p id="welcomeMessage" role="status" aria-live="polite"></p>
+
+</section>
+
+<main>
+<!--первая страница-->
+<section class="main-part">
+
+    <img src="images/purple.jpg"
+         alt="Outdoor cinema under the stars"
+         width="1200"
+         height="700">
+
+    <div class="main-overlay"></div>
+
+    <div class="main-text">
+
+        <p>MOON & MOVIES PRESENTS</p>
+
+        <h1>MOVIES UNDER THE STARS</h1>
+
+        <a href="movies.html" class="button">
+            Choose Movie
+        </a>
+
+    </div>
+
+</section>
+<!--вторая страница-->
+<section class="about">
+
+    <div class="about-text">
+
+        <p class="label">ABOUT US</p>
+
+        <h2>It started with four girls and one idea.</h2>
+
+        <p>
+            We wanted to create a place where Astana could feel
+            a little different at night.
+        </p>
+
+        <p>
+            Somewhere you could sit under the open sky, watch a
+            movie with your friends, grab a drink and forget
+            about the city for a couple of hours.
+        </p>
+
+        <p>
+            So we brought our love for cinema, our love for Astana
+            and our own vision together.
+        </p>
+
+        <strong>Moon & Movies was born.</strong>
+
+    </div>
+
+
+    <div class="about-visual">
+
+        <img src="images/favicon_movie.jpg"
+             alt="Moon & Movies logo"
+             width="600"
+             height="500">
+
+    </div>
+
+</section>
+<!--третья страница-->
+<section class="otzyv">
+
+    <div class="otzyv-title">
+
+        <p class="label">GUESTBOOK</p>
+
+        <h2>Nights worth sharing.</h2>
+
+        <p>What our guests say about movie nights.</p>
+
+    </div>
+
+
+    <div class="otzyv-list">
+
+        <article class="otzyv-card">
+
+            <img src="images/img1.JPG"
+                 alt="Guest at outdoor cinema"
+                 width="500"
+                 height="300">
+
+            <div class="otzyv-content">
+
+                <div class="otzyv-names">
+                    <strong>Dimash Kudaibergen</strong>
+                    <span>12 Sep 2026</span>
+                </div>
+
+                <p class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </p>
+
+                <p>
+                    Маған ұнады, ұйымдастыру өте жоғары деңгейде болды!
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="otzyv-card">
+
+            <img src="images/img3.JPG"
+                 alt="Guests watching a movie"
+                 width="500"
+                 height="300">
+
+            <div class="otzyv-content">
+
+                <div class="otzyv-names">
+                    <strong>Kairat Nurtas</strong>
+                    <span>8 Sep 2026</span>
+                </div>
+
+                <p class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9734;
+                </p>
+
+                <p>
+                    Өте күшті болды. F4, жарайсыңдар, сәттілік!
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="otzyv-card">
+
+            <img src="images/img2.JPG"
+                 alt="Cinema screen under the night sky"
+                 width="500"
+                 height="300">
+
+            <div class="otzyv-content">
+
+                <div class="otzyv-names">
+                    <strong>Ariana Grande</strong>
+                    <span>3 Sep 2026</span>
+                </div>
+
+                <p class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </p>
+
+                <p>
+                    It was very very күшті! Рахмет!
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+    <!--твой отзыв-->
+    <div class="write-otzyv">
+
+        <div>
+
+            <p class="label">YOUR TURN</p>
+
+            <h3>Had a good night?</h3>
+
+            <p>Tell us about your experience.</p>
+
+        </div>
+
+
+        <form>
+
+            <label for="name">Your name</label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+
+
+            <label for="rating">Rating</label>
+
+            <select id="rating" name="rating" required>
+
+                <option value="">Choose rating</option>
+
+                <option value="5">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                </option>
+
+                <option value="4">
+                    &#9733;&#9733;&#9733;&#9733;&#9734;
+                </option>
+
+                <option value="3">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                </option>
+
+                <option value="2">
+                    &#9733;&#9733;&#9734;&#9734;&#9734;
+                </option>
+
+                <option value="1">
+                    &#9733;&#9734;&#9734;&#9734;&#9734;
+                </option>
+
+            </select>
+
+
+            <label for="message">Your review</label>
+
+            <textarea id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Tell us about your movie night..."
+                      required></textarea>
+
+
+            <button type="submit">
+                Submit Review →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<!--скидка-->
+<section class="student-offer">
+
+    <p class="label">A LITTLE SOMETHING FOR YOU</p>
+
+    <h2>Are you a student?</h2>
+
+    <details>
+
+        <summary>Open your student offer →</summary>
+
+        <div class="offer-content">
+
+            <p class="offer-small">YOU'RE IN.</p>
+
+            <h3>We've got something special for you.</h3>
+
+            <strong>10% OFF</strong>
+
+            <p>
+                Enjoy 10% off your movie night.
+                Just bring your student ID.
+            </p>
+
+            <a href="schedule.html" class="button purple-button">
+                Use Your Student Discount →
+            </a>
+
+        </div>
+
+    </details>
+
+</section>
+<!--посмотреть расписание-->
+<section class="final-cta">
+
+    <p class="label">YOUR NEXT MOVIE NIGHT</p>
+
+    <h2>See you under the stars.</h2>
+
+    <p>
+        Choose your movie, pick a time and enjoy the night.
+    </p>
+
+    <a href="schedule.html" class="button">
+        Book Your Movie Night →
+    </a>
+
+</section>
+
+</main>
+
+
+
+<!--footer-->
+<footer class="movies-footer">
+
+    <p>
+        &#169; 2026 Moon & Movies. All rights reserved.
+    </p>
+
+    <p>
+        Cinema under the moon &#9829;
+    </p>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="js/assignment6.js"></script>
+<script src="js/assignment5.js"></script>
+
+</body>
+</html> 

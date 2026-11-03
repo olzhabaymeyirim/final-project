@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movies | Moon & Movies</title>
+
+    <link rel="icon" type="image/jpeg" href="favicon_movie.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">Moon & Movies</a>
+
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="movies.html" class="active">Movies</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="contact.html">Contact</a>
+            <a href="register.html">Register</a>
+
+            <select name="language" aria-label="Select language">
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+                <option value="kz">KZ</option>
+            </select>
+
+            <button
+                type="button"
+                id="themeButton"
+                class="theme-switch"
+                aria-label="Switch to light theme"
+                title="Switch to light theme">
+                ☀
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- Hero section -->
+    <section class="intro">
+        <div class="intro-content">
+            <p class="movies-small-title">WELCOME TO</p>
+
+            <h1>Moon & Movies</h1>
+
+            <p>
+                Discover your next favorite movie and enjoy
+                a perfect cinema experience under the moon.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Movies section -->
+    <main>
+        <section class="movies-list">
+
+            <div class="movies-title">
+                <p class="section-subtitle">NOW SHOWING</p>
+
+                <h2>Choose Your Movie</h2>
+
+                <p>
+                    Explore our selection of movies and find something
+                    special for your next cinema night.
+                </p>
+            </div>
+
+
+            <!-- TASK 3: Search and Category Filters -->
+            <div class="movie-search">
+
+                <label for="movieSearch">Search movies:</label>
+
+                <input
+                    type="search"
+                    id="movieSearch"
+                    placeholder="Type a movie title..."
+                >
+
+                <p>Choose a category:</p>
+
+                <div class="category-controls">
+                    <button type="button" class="category-btn active"
+                        data-category="all">All</button>
+
+                    <button type="button" class="category-btn"
+                        data-category="action">Action</button>
+
+                    <button type="button" class="category-btn"
+                        data-category="romance">Romance</button>
+
+                    <button type="button" class="category-btn"
+                        data-category="animation">Animation</button>
+
+                    <button type="button" class="category-btn"
+                        data-category="comedy">Comedy</button>
+
+                    <button type="button" class="category-btn"
+                        data-category="music">Music</button>
+                </div>
+
+                <p id="movieCount" role="status" aria-live="polite">
+                    Showing 6 movies
+                </p>
+
+                <p id="noResults" role="status" aria-live="polite" hidden>
+                    No results found.
+                </p>
+
+            </div>
+
+
+            <!-- Movie cards -->
+            <div class="griid">
+
+                <!-- 1. About Time -->
+                <article class="movie-list" data-category="romance">
+
+                    <div class="movie-image-box">
+                        <img src="images/about-time.jpg"
+                            alt="About Time movie poster"
+                            class="movie-image">
+                    </div>
+
+                    <div class="movie-details">
+                        <h3>About Time</h3>
+
+                        <p class="movie-genre">Romance • Drama</p>
+
+                        <p>
+                            A warm and emotional story about love,
+                            family and the importance of enjoying every moment.
+                        </p>
+
+                        <p class="movie-duration">
+                            <strong>Duration:</strong> 2h 03min
+                        </p>
+
+                        <a href="https://www.youtube.com/watch?v=wZYauaRKnhs"
+                            target="_blank" class="trailer-button">
+                            Watch Trailer
+                        </a>
+
+                        <a href="schedule.html" class="book-button">
+                            Book Now
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 2. F1 -->
+                <article class="movie-list" data-category="action">
+
+                    <div class="movie-image-box">
+                        <img src="images/f1.jpg"
+                            alt="F1 movie poster"
+                            class="movie-image">
+                    </div>
+
+                    <div class="movie-details">
+                        <h3>F1</h3>
+
+                        <p class="movie-genre">Action • Sport</p>
+
+                        <p>
+                            Feel the speed, competition and excitement
+                            of the racing world on the big screen.
+                        </p>
+
+                        <p class="movie-duration">
+                            <strong>Duration:</strong> 2h 35min
+                        </p>
+
+                        <a href="https://youtu.be/69ffwl-8pCU?si=vps46E7kG5qew4XS"
+                            target="_blank" class="trailer-button">
+                            Watch Trailer
+                        </a>
+
+                        <a href="schedule.html" class="book-button">
+                            Book Now
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 3. Frozen -->
+                <article class="movie-list" data-category="animation">
+
+                    <div class="movie-image-box">
+                        <img src="images/frozen.jpg"
+                            alt="Frozen movie poster"
+                            class="movie-image">
+                    </div>
+
+                    <div class="movie-details">
+                        <h3>Frozen</h3>
+
+                        <p class="movie-genre">Animation • Family</p>
+
+                        <p>
+                            A magical adventure about two sisters,
+                            friendship and finding the courage to be yourself.
+                        </p>
+
+                        <p class="movie-duration">
+                            <strong>Duration:</strong> 1h 42min
+                        </p>
+
+                        <a href="https://youtu.be/TbQm5doF_Uc?si=V42Avy8_o1Inx8Mc"
+                            target="_blank" class="trailer-button">
+                            Watch Trailer
+                        </a>
+
+                        <a href="schedule.html" class="book-button">
+                            Book Now
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 4. Hotel Transylvania -->
+                <article class="movie-list"
+                    data-category="animation comedy">
+
+                    <div class="movie-image-box">
+                        <img src="images/hotel-transylvania.jpg"
+                            alt="Hotel Transylvania movie poster"
+                            class="movie-image">
+                    </div>
+
+                    <div class="movie-details">
+                        <h3>Hotel Transylvania</h3>
+
+                        <p class="movie-genre">Animation • Comedy</p>
+
+                        <p>
+                            A funny animated adventure filled with
+                            monsters, friendship and unexpected surprises.
+                        </p>
+
+                        <p class="movie-duration">
+                            <strong>Duration:</strong> 1h 31min
+                        </p>
+
+                        <a href="https://youtu.be/q4RK3jY7AVk?si=tEbCUfL2bVzaEair"
+                            target="_blank" class="trailer-button">
+                            Watch Trailer
+                        </a>
+
+                        <a href="schedule.html" class="book-button">
+                            Book Now
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 5. La La Land -->
+                <article class="movie-list" data-category="romance music">
+
+                    <div class="movie-image-box">
+                        <img src="images/lalaland.jpg"
+                            alt="La La Land movie poster"
+                            class="movie-image">
+                    </div>
+
+                    <div class="movie-details">
+                        <h3>La La Land</h3>
+
+                        <p class="movie-genre">Musical • Romance</p>
+
+                        <p>
+                            A beautiful story about dreams, music,
+                            love and choosing your own path.
+                        </p>
+
+                        <p class="movie-duration">
+                            <strong>Duration:</strong> 2h 08min
+                        </p>
+
+                        <a href="https://youtu.be/0pdqf4P9MB8?si=ESaJSTWPbSqp15Ss"
+                            target="_blank" class="trailer-button">
+                            Watch Trailer
+                        </a>
+
+                        <a href="schedule.html" class="book-button">
+                            Book Now
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- 6. Michael -->
+                <article class="movie-list" data-category="music">
+
+                    <div class="movie-image-box">
+                        <img src="images/michael.jpg"
+                            alt="Michael movie poster"
+                            class="movie-image">
+                    </div>
+
+                    <div class="movie-details">
+                        <h3>Michael</h3>
+
+                        <p class="movie-genre">Biography • Music</p>
+
+                        <p>
+                            A musical story that brings the life,
+                            career and unforgettable moments of an artist to the screen.
+                        </p>
+
+                        <p class="movie-duration">
+                            <strong>Duration:</strong> 2h 11min
+                        </p>
+
+                        <a href="https://youtu.be/3zOLzsbOleM?si=oUK3v05QKlxZyYNA"
+                            target="_blank" class="trailer-button">
+                            Watch Trailer
+                        </a>
+
+                        <a href="schedule.html" class="book-button">
+                            Book Now
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Movie banner -->
+        <section class="movie-banner">
+            <div class="movie-banner-content">
+                <h2>Make Tonight a Movie Night</h2>
+
+                <p>
+                    Choose a movie, invite your friends and enjoy
+                    the atmosphere of Moon & Movies.
+                </p>
+
+                <a href="schedule.html" class="schedule-button">
+                    View Schedule
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    
+<!-- TASK 4: Movie Night Wishlist -->
+<section class="wishlist-section">
+
+    <h2>Movie Night Wishlist</h2>
+
+    <p>Add movies you want to watch during our cinema nights!</p>
+
+    <form id="wishlistForm">
+
+        <label for="wishlistInput">Movie title:</label>
+
+        <input
+            type="text"
+            id="wishlistInput"
+            placeholder="Enter a movie title"
+        >
+
+        <button type="submit">Add Movie</button>
+
+    </form>
+
+    <p id="wishlistCount" role="status" aria-live="polite">
+        Movies in your wishlist: 0
+    </p>
+
+    <p id="wishlistEmpty">
+        Your wishlist is empty. Add your first movie!
+    </p>
+
+    <ul id="wishlistItems"></ul>
+
+    <p id="wishlistMessage" role="status" aria-live="polite"></p>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer class="movies-footer">
+        <p>
+            &#169; 2026 Moon & Movies. All rights reserved.
+        </p>
+
+        <p>
+            Cinema under the moon &#9829;
+        </p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/assignment6.js"></script>
+    <script src="js/assignment5.js"></script>
+
+</body>
+</html>
