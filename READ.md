@@ -70,8 +70,8 @@ The project combines a consistent design, responsive layouts, and interactive fe
 
 ## Repository
 
-[Moon & Movies — GitHub Repository](https://github.com/olzhabaymeyirim/f4-project)
+[Moon & Movies — GitHub Repository] https://github.com/olzhabaymeyirim/final-project.git
 
 ## Deployed Website
 
-[Moon & Movies — Live Website](https://olzhabaymeyirim.github.io/f4-project/)
+[Moon & Movies — Live Website] https://olzhabaymeyirim.github.io/final-project/
