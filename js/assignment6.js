@@ -118,5 +118,79 @@ $(document).ready(function () {
             status.hide().fadeIn(400);
         }
     });
+    
+$(document).ready(function () {
+
+    function filterMovies() {
+
+        // Get selected filter values
+        let selectedLocation = $("#location").val();
+        let selectedAge = $("#age").val();
+        let selectedMovie = $("#movie").val();
+
+        let visibleMovies = 0;
+
+        $(".movie-card").each(function () {
+
+            let card = $(this);
+
+            // Get movie title without age rating
+            let title = card.find(".movie-info h3")
+                .clone()
+                .children()
+                .remove()
+                .end()
+                .text()
+                .trim();
+
+            // Get movie age rating
+            let age = card.find(".movie-info h3 span").text().trim();
+
+            // Get movie location
+            let location = card.find(".movie-info p").first()
+                .text()
+                .replace("Location:", "")
+                .trim();
+
+            // Check filters
+            let locationMatch =
+                selectedLocation === "All Parks" ||
+                location === selectedLocation;
+
+            let ageMatch =
+                selectedAge === "All Ages" ||
+                age === selectedAge;
+
+            let movieMatch =
+                selectedMovie === "All Movies" ||
+                title === selectedMovie;
+
+            // Show or hide movie card
+            if (locationMatch && ageMatch && movieMatch) {
+                card.show();
+                visibleMovies++;
+            } else {
+                card.hide();
+            }
+
+        });
+
+        // Show message if no movies found
+        if (visibleMovies === 0) {
+            if ($("#noMovies").length === 0) {
+                $(".movie-schedule").append(
+                    '<p id="noMovies">No movies found.</p>'
+                );
+            }
+        } else {
+            $("#noMovies").remove();
+        }
+    }
+
+    // Run filters when user changes selections
+    $("#location, #age, #movie").on("change", filterMovies);
+
+});
+
 
 });
